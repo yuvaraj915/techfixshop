@@ -33,7 +33,7 @@ p {
 .contact input[type="text"],
 .contact textarea {
   width: 100%;        /* makes it full width */
-  max-width: 500px;   /* controls maximum size */
+  max-width: 600px;   /* controls maximum size */
   padding: 15px;      /* bigger inside spacing */
   margin: 10px 0;
   font-size: 18px;
@@ -66,4 +66,5 @@ body{
   margin: 0;
   padding: 0;
   background-color: #dce0d9;}
+
 
