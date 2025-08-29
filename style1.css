@@ -1,3 +1,4 @@
+
 p {
   font-size: 16px;        /* size of text */
   line-height: 1.6;       /* spacing between lines */
@@ -13,14 +14,17 @@ p {
   size: 30px;
   gap: 40px;
   margin-right: 40px;
+  line-height: 2.5;
 }
 
 .services {
-  background-color: #dce0d9;
+  background-color: #fafcf9;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
   font-size: 22px;
+  text-indent: 1%;
+  line-height: 2.5;
   
 }
 /*
@@ -67,7 +71,7 @@ body{
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #dce0d9;}
+  background-color: #F5FFFA;}
 
 .contact {
   text-align: center;
@@ -118,3 +122,126 @@ body{
 .form-buttons button:hover {
   background-color: #000;
 }
+table {
+  width: 75%;
+  border-collapse: collapse; /* makes borders clean */
+
+}
+
+table, th, td {
+  border: 1px solid #333; /* black border */
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+thead {
+  background: #cbced4;
+  color: #0a0a0a;
+}
+tfoot {
+  background: #f3f3f3;
+  font-style: italic;
+}
+
+        /* ✅ Base design (Desktop First) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Example layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ✅ Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack items */
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* ✅ Mobile view (up to 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Example: make buttons full width */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+footer {
+  background-color: #F5F5F5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+button[type="submit"] {
+  background-color: #4CAF50; /* green background */
+  color: white;              /* white text */
+  padding: 12px 25px;        /* bigger size */
+  border: none;              /* remove border */
+  border-radius: 8px;        /* rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;           /* hand pointer on hover */
+  transition: 0.3s ease;     /* smooth hover effect */
+}
+
+/* Hover effect */
+button[type="submit"]:hover {
+  background-color: #45a049; /* slightly darker green */
+  transform: scale(1.05);    /* little zoom effect */
+}
+button[type="reset"] {
+  background-color: #f44336; /* red background */
+  color: white;              /* white text */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+button[type="reset"]:hover {
+  background-color: #d32f2f; /* darker red */
+  transform: scale(1.05);
+}
+
+
