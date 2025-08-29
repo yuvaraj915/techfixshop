@@ -1,0 +1,55 @@
+
+p {
+  font-size: 16px;        /* size of text */
+  line-height: 1.6;       /* spacing between lines */
+  color: #020202;            /* text color */
+  margin: 10px 0;         /* spacing outside */
+  padding: 5px;  
+  text-align: left;         /* spacing inside */
+}
+
+.nav-links li a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  size: 30px;
+  gap: 40px;
+  margin-right: 40px;
+}
+
+.services {
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  
+}
+.contact {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.contact input[type="text"],
+.contact textarea {
+  width: 100%;        /* makes it full width */
+  max-width: 500px;   /* controls maximum size */
+  padding: 15px;      /* bigger inside spacing */
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;       /* prevents awkward resizing */
+}
+
+/* Buttons */
+.contact button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
