@@ -23,6 +23,7 @@ p {
   font-size: 22px;
   
 }
+/*
 .contact {
   background-color: #dce0d9;
   padding: 20px;
@@ -33,14 +34,15 @@ p {
 .contact input[type="text"],
 .contact textarea {
   width: 100%;        /* makes it full width */
-  max-width: 600px;   /* controls maximum size */
+/*  max-width: 600px;   controls maximum size
   padding: 15px;      /* bigger inside spacing */
-  margin: 10px 0;
+/*  margin: 10px 0;
   font-size: 18px;
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: none;       /* prevents awkward resizing */
-}
+/*}
+
 
 /* Buttons */
 .contact button {
@@ -51,7 +53,7 @@ p {
   margin: 10px;
   cursor: pointer;
   transition: 0.3s;
-}
+} */
 
 
 .info {
@@ -67,4 +69,52 @@ body{
   padding: 0;
   background-color: #dce0d9;}
 
+.contact {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 500px;
+}
 
+.contact fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f8f8;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  flex: 1;
+  margin: 5px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #14213d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-buttons button:hover {
+  background-color: #000;
+}
